@@ -7,7 +7,7 @@
 @import "libs/placeholders";
 
 // Transformicon Color:
-$navicon-color: $light;
+$navicon-color: $pos;
 
 // Use SASS globbing to import all _.scss files in the module folder.
 // These should be independent modules that follow the BEM/SMACSS way
@@ -79,7 +79,7 @@ a {
 		padding: 5%;
 		clear: both;
 		background-color: $secondary;
-		color: $light;
+		color: $pos;
 		&:before {
 			content: "“ ";
 		}

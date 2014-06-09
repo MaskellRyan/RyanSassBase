@@ -38,7 +38,7 @@ if(isset($_POST['submitted'])) {
 	// upon no failure errors let's email now!
 	if(!isset($hasError)) {
 		
-		$emailTo = 'ryan@savorweb.com';
+		$emailTo = 'maskellryan@me.com';
 		$subject = 'Mail from '.$name;
 		$sendCopy = trim($_POST['sendCopy']);
 		$body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";

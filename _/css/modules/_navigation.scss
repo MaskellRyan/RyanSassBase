@@ -6,16 +6,24 @@
 
 .pagehead {
 
-	background-color: $primary;
+	background-color: $pos;
 	overflow-x: hidden;
+	border-bottom: solid 8px $secondary;
 
 	.logo {
 		display: block;
 		float: left;
-		margin: 7px 0 4px;
+		margin: 7px 0 0px;
 		max-width: 70%;
 		img {
 			width: 100%;
+		}
+		@include break($d) {
+			width: 20%;
+			img {
+				margin-top: 5%;
+				max-width: 300px;
+			}
 		}
 	}
 
@@ -32,7 +40,7 @@
 	}
 
 	.nav-collapse {
-
+		text-transform: uppercase;
 		@include clearfix;
 		background-color: $secondary;
 		clear: both;
@@ -44,6 +52,7 @@
 		margin: 0 -500%;
 		padding: 0 500%;
 		@include break($d) {
+			width: 80%;
 			margin: 0;
 			padding: 0;
 			clear: none;
@@ -55,26 +64,25 @@
 			// margin: 0 -500%;
 	  		//padding: 0 500%;
 		}
-
 		ul {
 
 			@include clearfix;
 			margin: 0; // cancel out global ul li style
 			@include break($d) {
-				width: auto;
+				width: 100%;
 				float: left;
 				clear: none;
 			}
 
 			li {
-
-				float: left;
+				float: right;
 				width: 50%;
 				margin: 0;
 				list-style-type: none;
 
 				@include break($d) {
 					width: auto;
+					margin: 0 1%;
 				}
 
 				a {
@@ -83,11 +91,17 @@
 					font-size: em-font(15px);
 					display: inline-block;
 					width: 100%;
-					color: $light;
-					padding: 25px 15px;
+					color: $neg;
+					padding: 25px 5px;
+					background-color: transparent;
+
+					transition: background-color 0.2s ease-in-out;
+					-moz-transition: background-color 0.2s ease-in-out;
+					-webkit-transition: background-color 0.2s ease-in-out;
 
 					&:hover, &:active {
-						background-color: transparentize($light, 0.9);
+						color: $pos;
+						background-color: $secondary;
 					}
 				}
 			}
