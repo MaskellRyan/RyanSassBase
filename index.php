@@ -1,5 +1,14 @@
 <?php include("_/inc/head.php"); ?>
-	
+
+		<title>RyanSassBase</title>
+		<meta name="description" content="..." />
+		<meta name="keywords" content="..." />
+
+</head>
+<body>
+
+<?php include("_/inc/nav.php"); ?>
+
 	<div id='slider' class='swipe'>
 	  <div id="slider-pictures" class='swipe-wrap editable'>
 	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
@@ -39,8 +48,8 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, tempora, similique pariatur quo nostrum quia nam quaerat impedit optio commodi iste delectus nihil hic minus dolorum possimus sunt maxime dicta.</p>
 	<h3>Heading 3</h3>
 	<blockquote>
-		The only thing worse than being blind, is having sight, and no vision.
-		<span>Anonymous</span>
+		<p>The only thing worse than being blind, is having sight, and no vision.</p>
+		<i>Anonymous</i>
 	</blockquote>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, a non hic nam repellat dolorem voluptatum vero nihil quas beatae consequuntur eligendi et ipsum recusandae vitae magnam laborum laboriosam amet.</p>
 	<h4>Heading 4</h4>

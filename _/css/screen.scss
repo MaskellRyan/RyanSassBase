@@ -80,15 +80,20 @@ a {
 		clear: both;
 		background-color: $secondary;
 		color: $pos;
-		&:before {
-			content: "“ ";
-		}
-		&:after {
-			content: " ”";	
-		}
 		@include break($b) {
 			clear: none;
 			float: right;
+		}
+		p {
+			&:before {
+				content: "“ ";
+			}
+			&:after {
+				content: " ”";	
+			}
+		}
+		i {
+			font-size: em-font(10px);
 		}
 	}
 }

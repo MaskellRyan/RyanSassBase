@@ -59,6 +59,7 @@ input, textarea {
 	box-shadow: none;
 	padding: 10px;
 	outline: 0;
+	margin-bottom: 15px;
 	&:focus {
 		outline: 1px solid $primary;
 	}
@@ -71,4 +72,10 @@ form {
 		margin: 10px 0;
 		padding: 10px;
 	}
+
+	.btn {
+		background-color: $primary;
+		color: $pos;
+	}
 }
+

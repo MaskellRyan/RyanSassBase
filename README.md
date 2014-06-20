@@ -7,14 +7,14 @@ It uses the following technologies and plugins and bows to their greatness, they
 + Framework: [Sassaparilla](http://sass.fffunction.co)
 + Preprocessing: [Mixture.io](http://mixture.io)
 
-##Plugins
+#Plugins
 
 + [Responsive Nav](http://www.responsive-nav.com)
 + [Transformicons](http://sarasoueidan.com/blog/navicon-transformicons/)
 + [Swipe.js](http://www.swipejs.com)
 
 --
---- script ---
+--- general script ---
 --
 
 <script type="text/javascript">
@@ -78,74 +78,74 @@ It uses the following technologies and plugins and bows to their greatness, they
 
 ### contact
 
-<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-		$(document).ready(function() {
-		$('form#contact-us').submit(function() {
-		  $('form#contact-us .error').remove();
-		  var hasError = false;
-		  $('.requiredField').each(function() {
-		    if($.trim($(this).val()) == '') {
-		      var labelText = $(this).prev('label').text();
-		      $(this).parent().append('<span style="display: block;" class="error">You forgot to enter your '+labelText+'.</span>');
-		      $(this).addClass('inputError');
-		      hasError = true;
-		    } else if($(this).hasClass('email')) {
-		      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		      if(!emailReg.test($.trim($(this).val()))) {
-		        var labelText = $(this).prev('label').text();
-		        $(this).parent().append('<span class="error">Sorry! You\'ve entered an invalid '+labelText+'.</span>');
-		        $(this).addClass('inputError');
-		        hasError = true;
-		      }
-		    }
-		  });
-		  if(!hasError) {
-		    var formInput = $(this).serialize();
-		    $.post($(this).attr('action'),formInput, function(data){
-		      $('form#contact-us').slideUp("fast", function() {          
-		        $(this).before('<p>Thanks for the message! We\'ll get back to you as soon as we can.</p>');
-		      });
-		    });
-		  }
-		  
-		  return false; 
-		});
-		});
-		//-->!]]>
+
+<script src="_/js/jquery.validate.min.js"></script>
+<script src="_/js/jquery.placeholder.min.js"></script>
+<script src="_/js/jquery.form.min.js"></script>
+<script>
+	$(function(){
+	$('#contact').validate({
+	submitHandler: function(form) {
+	    $(form).ajaxSubmit({
+	    url: 'contact-submit.php',
+	    success: function() {
+	    $('#contact').hide();
+	    $('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+	    }
+	    });
+	    }
+	});         
+	});
 </script>
 
-<div class="row" id="contact">
-	<?php if(isset($hasError) || isset($captchaError) ) { ?>
-        <p class="alert">Error submitting the form</p>
-    <?php } ?>
+<?php
+// Get Data 
+$name = strip_tags($_POST['name']);
+$email = strip_tags($_POST['email']);
+$phone = strip_tags($_POST['phone']);
 
-	<form id="contact-us" action="contact-submit.php" method="post">
-		<div class="formblock">
-			<label class="screen-reader-text">Name</label>
-			<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="txt requiredField" placeholder="Name:" />
-			<?php if($nameError != '') { ?>
-				<br /><span class="error"><?php echo $nameError;?></span> 
-			<?php } ?>
+$message = strip_tags($_POST['message']);
+
+// Send Message
+$success = mail( "maskellryan@gmail.com", "Webmail",
+"Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message\n",
+"From: $name <$email>" );
+
+// redirect to success page 
+if ($success){
+  header ("Location: thanks.php");
+  exit;
+}
+else{
+  header ("Location: error.php");
+  exit;
+}
+?>
+
+?>
+
+<form id="contact" action="contact-submit.php" method="post">
+	<fieldset>	
+		<div class="colspan12-6 colspan6-6 colspan2-2 as-grid formblock">
+			<label for="name">Name</label>
+			<input required type="text" name="name" placeholder="Full Name" title="Enter your name" class="required">
 		</div>
-        
-		<div class="formblock">
-			<label class="screen-reader-text">Email</label>
-			<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="txt requiredField email" placeholder="Email:" />
-			<?php if($emailError != '') { ?>
-				<br /><span class="error"><?php echo $emailError;?></span>
-			<?php } ?>
+
+	    <div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
+			<label for="phone">Phone</label>
+			<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
+	    </div>
+
+		<div class="formblock clear">
+			<label for="email">E-mail</label>
+			<input required type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
 		</div>
-        
-		<div class="formblock">
-			<label class="screen-reader-text">Message</label>
-			 <textarea name="comments" id="commentsText" class="txtarea requiredField" placeholder="Message:"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
-			<?php if($commentError != '') { ?>
-				<br /><span class="error"><?php echo $commentError;?></span> 
-			<?php } ?>
+	    
+		<div class="formblock clear">
+			<label for="message">Message</label>
+			<textarea required name="message" placeholder="Your message" ></textarea>
 		</div>
-        
-			<button name="submit" type="submit" class="subbutton">Send us Mail!</button>
-			<input type="hidden" name="submitted" id="submitted" value="true" />
-	</form>			
-</div>
+	    
+			<input type="submit" name="submit" class="button btn" id="submit" value="Send Message" />
+	</fieldset>
+</form>	
