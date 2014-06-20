@@ -79,17 +79,34 @@ textarea {
 }
 
 .pagehead {
-  background-color: #aa0022;
+  background-color: white;
   overflow-x: hidden;
+  border-bottom: solid 8px #9faeee;
 }
 .pagehead .logo {
   display: block;
   float: left;
-  margin: 7px 0 4px;
+  margin: 7px 0 0px;
   max-width: 70%;
 }
 .pagehead .logo img {
   width: 100%;
+}
+.lt-ie9 .pagehead .logo {
+  width: 20%;
+}
+.lt-ie9 .pagehead .logo img {
+  margin-top: 5%;
+  max-width: 300px;
+}
+@media screen and (min-width: 900px) {
+  .pagehead .logo {
+    width: 20%;
+  }
+  .pagehead .logo img {
+    margin-top: 5%;
+    max-width: 300px;
+  }
 }
 .pagehead #nav-toggle {
   float: right;
@@ -108,6 +125,7 @@ textarea {
   }
 }
 .pagehead .nav-collapse {
+  text-transform: uppercase;
   overflow: hidden;
   *zoom: 1;
   background-color: #9faeee;
@@ -121,6 +139,7 @@ textarea {
   padding: 0 500%;
 }
 .lt-ie9 .pagehead .nav-collapse {
+  width: 80%;
   margin: 0;
   padding: 0;
   clear: none;
@@ -130,6 +149,7 @@ textarea {
 }
 @media screen and (min-width: 900px) {
   .pagehead .nav-collapse {
+    width: 80%;
     margin: 0;
     padding: 0;
     clear: none;
@@ -144,40 +164,47 @@ textarea {
   margin: 0;
 }
 .lt-ie9 .pagehead .nav-collapse ul {
-  width: auto;
+  width: 100%;
   float: left;
   clear: none;
 }
 @media screen and (min-width: 900px) {
   .pagehead .nav-collapse ul {
-    width: auto;
+    width: 100%;
     float: left;
     clear: none;
   }
 }
 .pagehead .nav-collapse ul li {
-  float: left;
+  float: right;
   width: 50%;
   margin: 0;
   list-style-type: none;
 }
 .lt-ie9 .pagehead .nav-collapse ul li {
   width: auto;
+  margin: 0 1%;
 }
 @media screen and (min-width: 900px) {
   .pagehead .nav-collapse ul li {
     width: auto;
+    margin: 0 1%;
   }
 }
 .pagehead .nav-collapse ul li a {
   font-size: 0.9375em;
   display: inline-block;
   width: 100%;
-  color: white;
-  padding: 25px 15px;
+  color: black;
+  padding: 25px 5px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
 }
 .pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
-  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  background-color: #9faeee;
 }
 
 /*! responsive-nav.js 1.0.32 by @viljamis */
