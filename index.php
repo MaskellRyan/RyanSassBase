@@ -65,15 +65,10 @@
 </div>
 
 <div id="gallery" class="row editable-gallery">
-	<a href="http://www.placehold.it/500x600" class="fancybox"><img src="http://www.placehold.it/500x600" alt=""></a>
-	<a href="http://www.placehold.it/300x300" class="fancybox"><img src="http://www.placehold.it/300x300" alt=""></a>
-	<a href="http://www.placehold.it/800x300" class="fancybox"><img src="http://www.placehold.it/800x300" alt=""></a>
-	<a href="http://www.placehold.it/200x500" class="fancybox"><img src="http://www.placehold.it/200x300" alt=""></a>
-	<a href="http://www.placehold.it/500x300" class="fancybox"><img src="http://www.placehold.it/500x300" alt=""></a>
-	<a href="http://www.placehold.it/800x300" class="fancybox"><img src="http://www.placehold.it/800x300" alt=""></a>
-	<a href="http://www.placehold.it/200x500" class="fancybox"><img src="http://www.placehold.it/200x300" alt=""></a>
-	<a href="http://www.placehold.it/500x300" class="fancybox"><img src="http://www.placehold.it/500x300" alt=""></a>
-	<a href="http://www.placehold.it/300x300" class="fancybox"><img src="http://www.placehold.it/300x300" alt=""></a>
+	<a href="_/img/1.jpg" class="fancybox"><img src="_/img/1.jpg" alt=""></a>
+	<a href="_/img/2.jpg" class="fancybox"><img src="_/img/2.jpg" alt=""></a>
+	<a href="_/img/3.JPG" class="fancybox"><img src="_/img/3.JPG" alt=""></a>
+	<a href="_/img/4.jpg" class="fancybox"><img src="_/img/4.JPG" alt=""></a>
 </div>
 
 
