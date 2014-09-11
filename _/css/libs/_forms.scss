@@ -55,11 +55,12 @@ input[type="checkbox"]:focus {
 input, textarea {
 	width: 100%;
 	border: 0;
-	background: lighten($secondary, 15%);
+	background: lighten($grey, 30%);
 	box-shadow: none;
 	padding: 10px;
 	outline: 0;
 	margin-bottom: 15px;
+	color: $neg;
 	&:focus {
 		outline: 1px solid $primary;
 	}

@@ -1,6 +1,6 @@
 <?php include("_/inc/head.php"); ?>
 
-		<title>RyanSassBase</title>
+		<title>Onbelay</title>
 		<meta name="description" content="..." />
 		<meta name="keywords" content="..." />
 

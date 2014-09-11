@@ -18,7 +18,7 @@
 
 $a								: 300px;	// first viewport 
 $b								: 420px;	// up one
-$c								: 600px;	// up two
+$c								: 640px;	// up two
 $d								: 960px;	// up three
 $e								: 960px;	// up four
 $f								: 960px;	// up five
@@ -47,8 +47,10 @@ $betty-blue 						: #a8d9f4;
 $pos: #fff;
 $neg: #000;
 
-$primary 							: #aa0022;
-$secondary							: #bbb;
+$grey: lighten(#000, 50%);
+
+$primary 							: #0B5872;
+$secondary							: rgba(218, 138, 47, 0.9);
 
 // Assign colours to variable roles
 // Be descriptive without being specific. 
