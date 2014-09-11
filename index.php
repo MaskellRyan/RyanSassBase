@@ -38,6 +38,7 @@
 
 <div class="strip"></div>
 
+<<<<<<< HEAD
 <section class="row typeset">
 	<div class="colspan12-6 as-grid">
 	<h1>Who We Are</h1>
@@ -47,6 +48,19 @@
 	<div class="colspan12-6 as-grid with-gutter">
 		<h1>What We Do</h1>
 		<p>OnBelay Security Solutions responds to security concerns with experienced, professional guidance so that our clients can make informed business decisions. Providing investigative and security consulting services to a multitude of businesses and other entities worldwide, with quality personnel who have many years of wide-ranging experiences in our diverse and complex world, is our mission and expertise.</p>
+=======
+<div id="gallery" class="row editable-gallery">
+	<a href="http://www.placehold.it/500x600" class="fancybox"><img src="http://www.placehold.it/500x600" alt=""></a>
+	<a href="http://www.placehold.it/300x300" class="fancybox"><img src="http://www.placehold.it/300x300" alt=""></a>
+	<a href="http://www.placehold.it/800x300" class="fancybox"><img src="http://www.placehold.it/800x300" alt=""></a>
+	<a href="http://www.placehold.it/200x500" class="fancybox"><img src="http://www.placehold.it/200x300" alt=""></a>
+	<a href="http://www.placehold.it/500x300" class="fancybox"><img src="http://www.placehold.it/500x300" alt=""></a>
+	<a href="http://www.placehold.it/800x300" class="fancybox"><img src="http://www.placehold.it/800x300" alt=""></a>
+	<a href="http://www.placehold.it/200x500" class="fancybox"><img src="http://www.placehold.it/200x300" alt=""></a>
+	<a href="http://www.placehold.it/500x300" class="fancybox"><img src="http://www.placehold.it/500x300" alt=""></a>
+	<a href="http://www.placehold.it/300x300" class="fancybox"><img src="http://www.placehold.it/300x300" alt=""></a>
+</div>
+>>>>>>> parent of 5aaa9eb... conflict
 
 		<h2>Our Locations</h2>
 		<div class="gutter-grid">
