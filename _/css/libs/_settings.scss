@@ -18,13 +18,13 @@
 
 $a								: 300px;	// first viewport 
 $b								: 420px;	// up one
-$c								: 600px;	// up two
-$d								: 900px;	// up three
-$e								: 1100px;	// up four
-$f								: 1300px;	// up five
-$ie-fixed						: 980px;    // Viewport for IE fixed width
+$c								: 640px;	// up two
+$d								: 960px;	// up three
+$e								: 960px;	// up four
+$f								: 960px;	// up five
+$ie-fixed						: 960px;    // Viewport for IE fixed width
 
-$max 							: $f; 	// max viewport. Syntactically makes for a nicer option
+$max 							: $d; 	// max viewport. Syntactically makes for a nicer option
 
 
 // At some point, you'll want to switch from a one column view to multi-column.
@@ -47,8 +47,10 @@ $betty-blue 						: #a8d9f4;
 $pos: #fff;
 $neg: #000;
 
-$primary 							: #aa0022;
-$secondary							: #9faeee;
+$grey: lighten(#000, 50%);
+
+$primary 							: #0B5872;
+$secondary							: rgba(218, 138, 47, 0.9);
 
 // Assign colours to variable roles
 // Be descriptive without being specific. 
