@@ -1,6 +1,6 @@
 <?php include("_/inc/head.php"); ?>
 
-		<title>Onbelay</title>
+		<title>RyanSassBase</title>
 		<meta name="description" content="..." />
 		<meta name="keywords" content="..." />
 
@@ -8,80 +8,68 @@
 <body>
 
 <?php include("_/inc/nav.php"); ?>
-<div class="slide-wrap">
-	<div class="headline-wrap">
-		<div class="center">
-		<h1 class="hero-headline">
-			OnBelay Security Solutions provides effective and comprehensive solutions for today’s most complex security problems.
-		</h1>
-		</div>
-	</div>
+
 	<div id='slider' class='swipe'>
 	  <div id="slider-pictures" class='swipe-wrap editable'>
-	    <div class="repeatable"><img src="_/img/sheild2.jpg" alt=""></div>
+	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
+	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
+	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
 	  </div>
 	</div>
-</div>
-<section class="row typeset">
+
+<div class="row typeset">
+	<h1>Heading 1</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, id, vero, commodi ut aperiam corporis nisi laudantium explicabo quis consequatur debitis eligendi quasi consequuntur asperiores deserunt placeat eos dolor ipsa.</p>
+
+	<ul class="acc">
+		<li>
+			<div class="acc-head">Thing 1<i class="fa fa-chevron-down acc-plus fa-fw"></i><i class="fa fa-chevron-up acc-minus fa-fw"></i></div>
+			<div class="acc-panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, eveniet, eaque, autem beatae amet mollitia saepe minus fugit odit minima maxime harum explicabo ipsa natus est similique ab reprehenderit totam!</p>
+			</div>
+		</li>
+		<li>
+			<div class="acc-head">Thing 2<i class="fa fa-chevron-down acc-plus fa-fw"></i><i class="fa fa-chevron-up acc-minus fa-fw"></i></div>
+			<div class="acc-panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, incidunt, maxime nostrum dolore eum dolores cum sunt ducimus debitis reiciendis praesentium molestias? Soluta, fugit, nisi odit nostrum at tempore architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, repellat adipisci eius magni necessitatibus non soluta amet eligendi. Optio, consequuntur hic cumque dolorum ipsam doloribus repellendus harum unde consequatur odio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, nobis, tenetur nihil quod itaque molestiae assumenda quam rem dolore quisquam facilis ea necessitatibus officiis praesentium labore doloribus voluptas consequuntur deserunt.</p>
+			</div>
+		</li>
+		<li>
+			<div class="acc-head">Thing 3<i class="fa fa-chevron-down acc-plus fa-fw"></i><i class="fa fa-chevron-up acc-minus fa-fw"></i></div>
+			<div class="acc-panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, alias nemo ab modi porro quam ex temporibus animi ipsam laborum aperiam excepturi doloremque! Quia, fugiat culpa corporis obcaecati laborum atque.</p>
+			</div>
+		</li>
+	</ul>
+	<h2>Heading 2</h2>
+	<img class="right" src="http://www.placehold.it/500x300" alt="">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis, dolore, quos, numquam facilis voluptatum consectetur minima alias molestiae libero quibusdam rem error adipisci dolorem repellat accusamus dignissimos doloribus et!</p>
+	<img src="http://www.placehold.it/1000x300" alt="">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, tempora, similique pariatur quo nostrum quia nam quaerat impedit optio commodi iste delectus nihil hic minus dolorum possimus sunt maxime dicta.</p>
+	<h3>Heading 3</h3>
+	<blockquote>
+		<p>The only thing worse than being blind, is having sight, and no vision.</p>
+		<i>Anonymous</i>
+	</blockquote>
+	<img class="left" src="http://www.placehold.it/400x300" alt="">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, a non hic nam repellat dolorem voluptatum vero nihil quas beatae consequuntur eligendi et ipsum recusandae vitae magnam laborum laboriosam amet.</p>
+	<h4>Heading 4</h4>
 	
-	<div class="colspan12-12">
-		<h1>Welcome to OnBelay</h1>
-	</div>
-	<div class="colspan12-6 as-grid">
-		<p>OnBelay Security Solutions is a full service private investigative and security consulting firm that specializes in mitigating and solving security concerns. Our headquarters is located in Coeur d’Alene, Idaho with a regional office in Houston, Texas. We have a strong affiliate presence nationally and internationally with the capability to provide investigations and consulting services world-wide. OnBelay personnel have conducted investigations and consulted on security matters</p>
-	</div>
-	<div class="colspan12-6 as-grid with-gutter">
-		<p>around the globe for corporations of all sizes, law firms, privately held companies, educational institutions, and high net-worth individuals. OnBelay Security Solutions consultants and investigators have established reputations of providing the very highest quality of security services with uncompromising thoroughness and integrity.</p>
-	</div>
-
-</section>
-
-<div class="strip"></div>
-
-<<<<<<< HEAD
-<section class="row typeset">
-	<div class="colspan12-6 as-grid">
-	<h1>Who We Are</h1>
-		<p>OnBelay Security Solutions is a full service security and investigative firm. Our highly trained and experienced professionals are former FBI agents, law enforcement officers, corporate security investigators, and technically skilled consultants, all of whom bring many years of security, intelligence, and investigative capability, in both the public and private sectors. In 2014, OnBelay Security Solutions partnered with Manis Investigations, a premier corporate security and investigative company, headquartered in Coeur d Alene, Idaho. Manis Investigations, and its founder Wayne F. Manis, have built a reputation for excellence while conducting over 20,000 successful investigations during its 20 year history.</p>
-		<p>Protecting our client’s interests requires experience, understanding, and uncompromising integrity and discretion. When confidentiality and discreet inquiries are of the utmost importance to you, rely upon OnBelay Security Solutions.</p>
-	</div>
-	<div class="colspan12-6 as-grid with-gutter">
-		<h1>What We Do</h1>
-		<p>OnBelay Security Solutions responds to security concerns with experienced, professional guidance so that our clients can make informed business decisions. Providing investigative and security consulting services to a multitude of businesses and other entities worldwide, with quality personnel who have many years of wide-ranging experiences in our diverse and complex world, is our mission and expertise.</p>
-=======
-<div id="gallery" class="row editable-gallery">
-	<a href="http://www.placehold.it/500x600" class="fancybox"><img src="http://www.placehold.it/500x600" alt=""></a>
-	<a href="http://www.placehold.it/300x300" class="fancybox"><img src="http://www.placehold.it/300x300" alt=""></a>
-	<a href="http://www.placehold.it/800x300" class="fancybox"><img src="http://www.placehold.it/800x300" alt=""></a>
-	<a href="http://www.placehold.it/200x500" class="fancybox"><img src="http://www.placehold.it/200x300" alt=""></a>
-	<a href="http://www.placehold.it/500x300" class="fancybox"><img src="http://www.placehold.it/500x300" alt=""></a>
-	<a href="http://www.placehold.it/800x300" class="fancybox"><img src="http://www.placehold.it/800x300" alt=""></a>
-	<a href="http://www.placehold.it/200x500" class="fancybox"><img src="http://www.placehold.it/200x300" alt=""></a>
-	<a href="http://www.placehold.it/500x300" class="fancybox"><img src="http://www.placehold.it/500x300" alt=""></a>
-	<a href="http://www.placehold.it/300x300" class="fancybox"><img src="http://www.placehold.it/300x300" alt=""></a>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quae iure eius enim praesentium quia doloremque. Modi, molestias, nisi, cumque pariatur sint quaerat ullam recusandae reprehenderit eos dolores perferendis quidem.</p>
+	<ul>
+		<li>Things</li>
+		<li>Things</li>
+		<li>Things</li>
+	</ul>
+	
 </div>
->>>>>>> parent of 5aaa9eb... conflict
 
-		<h2>Our Locations</h2>
-		<div class="gutter-grid">
-			<div class="colspan12-6 as-grid with-gutter">
-				<p class="blue">
-				<em>OnBelay Security Solutions</em><br>
-				516 E Sherman Ave <br>
-				Coeur d Alene, ID 83814 <br>
-				208-765-8135
-				</p>
-			</div>
-			<div class="colspan12-6 as-grid with-gutter">
-				<p class="blue">
-				<em>OnBelay Security Solutions</em><br>
-				8524 Hwy 6 North #473 <br>
-				Houston, Texas 77095 <br>
-				281-382-7833
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
+<div id="gallery" class="row editable-gallery">
+	<a href="_/img/1.jpg" class="fancybox"><img src="_/img/1.jpg" alt=""></a>
+	<a href="_/img/2.jpg" class="fancybox"><img src="_/img/2.jpg" alt=""></a>
+	<a href="_/img/3.JPG" class="fancybox"><img src="_/img/3.JPG" alt=""></a>
+	<a href="_/img/4.jpg" class="fancybox"><img src="_/img/4.JPG" alt=""></a>
+</div>
+
 
 <?php include("_/inc/foot.php"); ?>
