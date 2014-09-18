@@ -31,6 +31,7 @@
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <script src="_/js/responsive-nav.min.js"></script>
 <script src="_/js/responsive-accordion.min.js"></script>
 <script src="_/js/swipe.min.js"></script>
@@ -45,6 +46,7 @@
 		auto: 6000,
 	});
 </script>
+
 
 <script src="_/js/jquery.validate.min.js"></script>
 <script src="_/js/jquery.placeholder.min.js"></script>
@@ -61,7 +63,7 @@
 					}
 				});
 			}
-		});         
+		});
 	});
 </script>
 
@@ -79,6 +81,9 @@
 
 <script src="_/js/masonry.min.js"></script>
 <script src="_/js/imagesloaded.min.js"></script>
+
+<script src="_/js/script.min.js"></script>
+
 <script>
 	$(document).ready( function() {
 			    // Don't execute if we're in the Live Editor
@@ -106,17 +111,14 @@
 		var container = document.querySelector('#gallery');
 		
 		var msnry = new Masonry( container, {
-			columnWidth: 55,
+			columnWidth: 65,
 			itemSelector: '.fancybox'
 		});
-		
-		console.log("Ran ImagesLoaded");
 	});
 	
 </script>
 
 
-<script src="_/js/script.min.js"></script>
 
 </body>
 

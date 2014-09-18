@@ -1,7 +1,7 @@
 @charset "UTF-8";
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -125,7 +125,7 @@ textarea {
   text-transform: uppercase;
   overflow: hidden;
   *zoom: 1;
-  background-color: #bbbbbb;
+  background-color: #bbb;
   clear: both;
   text-align: center;
   font-weight: lighter;
@@ -192,7 +192,7 @@ textarea {
   font-size: 0.9375em;
   display: inline-block;
   width: 100%;
-  color: black;
+  color: #000;
   padding: 30px 5px;
   background-color: transparent;
   transition: background-color 0.2s ease-in-out;
@@ -200,7 +200,7 @@ textarea {
   -webkit-transition: background-color 0.2s ease-in-out;
 }
 .pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
-  color: white;
+  color: #fff;
 }
 
 /*! responsive-nav.js 1.0.32 by @viljamis */
@@ -235,7 +235,7 @@ textarea {
 }
 
 .nav-toggle {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -307,7 +307,7 @@ button span {
   display: inline-block;
   width: 2rem;
   height: 0.2857143rem;
-  background: white;
+  background: #fff;
   border-radius: 0.1428571rem;
   transition: 0.3s;
   position: relative;
@@ -316,7 +316,7 @@ button span {
   display: inline-block;
   width: 2rem;
   height: 0.2857143rem;
-  background: white;
+  background: #fff;
   border-radius: 0.1428571rem;
   transition: 0.3s;
   position: absolute;
@@ -403,8 +403,8 @@ html {
 }
 
 body {
-  background: white;
-  color: #777777;
+  background: #fff;
+  color: #777;
 }
 
 a {
@@ -496,8 +496,8 @@ a:not(> img) {
 .typeset blockquote {
   padding: 5%;
   clear: both;
-  background-color: #bbbbbb;
-  color: white;
+  background-color: #bbb;
+  color: #fff;
 }
 .lt-ie9 .typeset blockquote {
   clear: none;
@@ -649,14 +649,14 @@ input:focus, textarea:focus {
 }
 
 form button {
-  color: white;
+  color: #fff;
   background-color: #aa0022;
   margin: 10px 0;
   padding: 10px;
 }
 form .btn {
   background-color: #aa0022;
-  color: white;
+  color: #fff;
 }
 
 .row, .row__colspaced {
