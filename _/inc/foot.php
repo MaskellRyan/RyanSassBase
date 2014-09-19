@@ -27,6 +27,11 @@
 	</form>	
 </div>
 
+<footer class="pagefoot">
+	<div class="row">
+		® RyanSassBase
+	</div>
+</footer>
 
 
 
@@ -111,7 +116,7 @@
 		var container = document.querySelector('#gallery');
 		
 		var msnry = new Masonry( container, {
-			columnWidth: 65,
+			columnWidth: 73,
 			itemSelector: '.fancybox'
 		});
 	});

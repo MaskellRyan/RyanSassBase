@@ -78,131 +78,6 @@ textarea {
   clear: both;
 }
 
-.pagehead {
-  background-color: #aa0022;
-  overflow-x: hidden;
-}
-.pagehead .logo {
-  display: block;
-  float: left;
-  margin: 12px 0 12px;
-  max-width: 50%;
-}
-.pagehead .logo img {
-  width: 100%;
-}
-.lt-ie9 .pagehead .logo {
-  width: 30%;
-}
-.lt-ie9 .pagehead .logo img {
-  max-width: 300px;
-}
-@media screen and (min-width: 960px) {
-  .pagehead .logo {
-    width: 30%;
-  }
-  .pagehead .logo img {
-    max-width: 300px;
-  }
-}
-.pagehead #nav-toggle {
-  float: right;
-  margin: 0;
-  padding-bottom: 23px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 0;
-}
-.lt-ie9 .pagehead #nav-toggle {
-  display: none;
-}
-@media screen and (min-width: 960px) {
-  .pagehead #nav-toggle {
-    display: none;
-  }
-}
-.pagehead .nav-collapse {
-  text-transform: uppercase;
-  overflow: hidden;
-  *zoom: 1;
-  background-color: #bbb;
-  clear: both;
-  text-align: center;
-  font-weight: lighter;
-  padding-bottom: 15px;
-  position: relative;
-  clear: both;
-  margin: 0 -500%;
-  padding: 0 500%;
-}
-.lt-ie9 .pagehead .nav-collapse {
-  width: 70%;
-  margin: 0;
-  padding: 0;
-  clear: none;
-  background-color: transparent;
-  float: right;
-  padding-bottom: 0;
-}
-@media screen and (min-width: 960px) {
-  .pagehead .nav-collapse {
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    clear: none;
-    background-color: transparent;
-    float: right;
-    padding-bottom: 0;
-  }
-}
-.pagehead .nav-collapse ul {
-  overflow: hidden;
-  *zoom: 1;
-  margin: 0;
-}
-.lt-ie9 .pagehead .nav-collapse ul {
-  width: 100%;
-  float: left;
-  clear: none;
-}
-@media screen and (min-width: 960px) {
-  .pagehead .nav-collapse ul {
-    width: 100%;
-    float: left;
-    clear: none;
-  }
-}
-.pagehead .nav-collapse ul li {
-  float: right;
-  width: 50%;
-  margin: 0;
-  list-style-type: none;
-}
-.lt-ie9 .pagehead .nav-collapse ul li {
-  width: auto;
-  margin: 0 1%;
-}
-@media screen and (min-width: 960px) {
-  .pagehead .nav-collapse ul li {
-    width: auto;
-    margin: 0 1%;
-  }
-}
-.pagehead .nav-collapse ul li a {
-  font-size: 0.9375em;
-  display: inline-block;
-  width: 100%;
-  color: #000;
-  padding: 30px 5px;
-  background-color: transparent;
-  transition: background-color 0.2s ease-in-out;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
-}
-.pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
-  color: #fff;
-}
-
 /*! responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse ul {
   margin: 0;
@@ -425,6 +300,143 @@ a:not(> img) {
   word-wrap: break-word;
 }
 
+.pagehead {
+  background-color: #aa0022;
+  width: 100%;
+  z-index: 10;
+  overflow-x: hidden;
+}
+.pagehead .logo {
+  display: block;
+  float: left;
+  margin: 12px 0 12px;
+  max-width: 50%;
+}
+.pagehead .logo img {
+  width: 100%;
+}
+.lt-ie9 .pagehead .logo {
+  width: 30%;
+}
+.lt-ie9 .pagehead .logo img {
+  max-width: 300px;
+}
+@media screen and (min-width: 960px) {
+  .pagehead .logo {
+    width: 30%;
+  }
+  .pagehead .logo img {
+    max-width: 300px;
+  }
+}
+.pagehead #nav-toggle {
+  float: right;
+  margin: 0;
+  padding-bottom: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0;
+}
+.lt-ie9 .pagehead #nav-toggle {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .pagehead #nav-toggle {
+    display: none;
+  }
+}
+.pagehead .nav-collapse {
+  text-transform: uppercase;
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #bbb;
+  clear: both;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 15px;
+  position: relative;
+}
+.lt-ie9 .pagehead .nav-collapse {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  clear: none;
+  background-color: transparent;
+  float: right;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .pagehead .nav-collapse {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    clear: none;
+    background-color: transparent;
+    float: right;
+    padding-bottom: 0;
+  }
+}
+.pagehead .nav-collapse ul {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0;
+}
+.lt-ie9 .pagehead .nav-collapse ul {
+  width: 100%;
+  float: left;
+  clear: none;
+}
+@media screen and (min-width: 960px) {
+  .pagehead .nav-collapse ul {
+    width: 100%;
+    float: left;
+    clear: none;
+  }
+}
+.pagehead .nav-collapse ul li {
+  margin: 0;
+  list-style-type: none;
+}
+.pagehead .nav-collapse ul li a {
+  font-size: 0.9375em;
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  padding: 15px 5px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+}
+.pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
+  color: #fff;
+  background-color: #d4d4d4;
+}
+.lt-ie9 .pagehead .nav-collapse ul li a:hover, .lt-ie9 .pagehead .nav-collapse ul li a:active {
+  background-color: transparent;
+}
+@media screen and (min-width: 960px) {
+  .pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
+    background-color: transparent;
+  }
+}
+.lt-ie9 .pagehead .nav-collapse ul li {
+  width: auto;
+  float: right;
+}
+.lt-ie9 .pagehead .nav-collapse ul li a {
+  padding: 30px 5px;
+}
+@media screen and (min-width: 960px) {
+  .pagehead .nav-collapse ul li {
+    width: auto;
+    float: right;
+  }
+  .pagehead .nav-collapse ul li a {
+    padding: 30px 5px;
+  }
+}
+
 .editable-gallery .fancybox {
   width: 40%;
   margin-bottom: 10px;
@@ -549,6 +561,21 @@ a:not(> img) {
 
 .acc-panel {
   padding: 0px 20px 10px;
+}
+
+.pagefoot {
+  background-color: #bbb;
+  margin-top: 50px;
+  padding: 15px 0;
+  text-align: right;
+}
+
+.fancybox img {
+  width: 100%;
+}
+
+.fancybox.large {
+  width: 43%;
 }
 
 /* ::Import styles */

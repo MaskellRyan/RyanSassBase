@@ -11,9 +11,9 @@
 
 	<div id='slider' class='swipe'>
 	  <div id="slider-pictures" class='swipe-wrap editable'>
-	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
-	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
-	    <div class="repeatable"><img src="http://www.placehold.it/1000x300" alt=""></div>
+	    <div class="repeatable"><img src="http://www.placehold.it/1500x700" alt=""></div>
+	    <div class="repeatable"><img src="http://www.placehold.it/1500x700" alt=""></div>
+	    <div class="repeatable"><img src="http://www.placehold.it/1500x700" alt=""></div>
 	  </div>
 	</div>
 
@@ -65,10 +65,17 @@
 </div>
 
 <div id="gallery" class="row editable-gallery">
-	<a href="_/img/1.jpg" class="fancybox"><img src="_/img/1.jpg" alt=""></a>
-	<a href="_/img/2.jpg" class="fancybox"><img src="_/img/2.jpg" alt=""></a>
-	<a href="_/img/3.JPG" class="fancybox"><img src="_/img/3.JPG" alt=""></a>
-	<a href="_/img/4.jpg" class="fancybox"><img src="_/img/4.JPG" alt=""></a>
+	<a href="_/img/200x100.gif" class="fancybox large"><img src="_/img/200x100.gif" alt=""></a>
+	<a href="_/img/200x200.gif" class="fancybox"><img src="_/img/200x200.gif" alt=""></a>
+	<a href="_/img/200x300.gif" class="fancybox"><img src="_/img/200x300.gif" alt=""></a>
+	<a href="_/img/200x100.gif" class="fancybox"><img src="_/img/200x100.gif" alt=""></a>
+	<a href="_/img/200x200.gif" class="fancybox"><img src="_/img/200x200.gif" alt=""></a>
+	<a href="_/img/200x300.gif" class="fancybox"><img src="_/img/200x300.gif" alt=""></a>
+	<a href="_/img/200x200.gif" class="fancybox large"><img src="_/img/200x200.gif" alt=""></a>
+	<a href="_/img/200x250.gif" class="fancybox"><img src="_/img/200x250.gif" alt=""></a>
+	<a href="_/img/200x100.gif" class="fancybox"><img src="_/img/200x100.gif" alt=""></a>
+	<a href="_/img/200x250.gif" class="fancybox"><img src="_/img/200x250.gif" alt=""></a>
+	<a href="_/img/200x250.gif" class="fancybox"><img src="_/img/200x250.gif" alt=""></a>
 </div>
 
 
