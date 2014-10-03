@@ -7,8 +7,9 @@
 // Fonts
 // ------------------------------------------------------------
 
-.font-body 					{  font-family: 'titilliumregular', sans-serif; }
+.font-body 					{  font-family: 'Open Sans', sans-serif, sans-serif; }
 .sans 					{  font-family: Helvetica, Arial, sans-serif; }
+
 
 // ------------------------------------------------------------
 // Core typography
@@ -20,18 +21,3 @@ ol 													{ @include nobullet; }
 li 													{ line-height: inherit; }					
 strong, b 											{ font-weight: 700; }
 em, i, q 											{ font-style: italic; }
-
-.typeset {
-	h1, h2, h3, h4, h5, h6 {
-		color: $primary;
-	}
-	h2 {
-		color: $secondary;
-		border-bottom: 2px solid $primary;
-		padding-bottom: 8px;
-	}
-}
-
-.blue {
-	color: $primary !important;
-}
