@@ -237,6 +237,24 @@ a {
 // LAYOUT //
 ////////////
 
+.social-links {
+	li {
+		float: left;
+		margin-right: 10px;
+		a {
+			display: block;
+			border-radius: 100px;
+			&:hover {
+				background-color: lighten($primary, 25%);
+			}
+			img {
+				width: 20px;
+				margin-bottom: -4px;
+			}
+		}
+	}
+}
+
 .row.typeset {
 	padding-top: 20px;
 	padding-bottom: 20px;

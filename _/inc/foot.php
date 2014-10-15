@@ -24,11 +24,19 @@
 			
 			<input type="submit" name="submit" class="button btn" id="submit" value="Send Message" />
 		</fieldset>
-	</form>	
+	</form>
 </div>
 
 <footer class="pagefoot">
 	<div class="row">
+		<ul class="social-links">
+			<li><a href="#"><img src="_/img/facebook.png" alt="facebook"></a></li>
+			<li><a href="#"><img src="_/img/twitter.png" alt="twitter"></a></li>
+			<li><a href="#"><img src="_/img/google.png" alt="google"></a></li>
+			<li><a href="#"><img src="_/img/linkedin.png" alt="linkedin"></a></li>
+			<li><a href="#"><img src="_/img/youtube.png" alt="youtube"></a></li>
+			<li><a href="#"><img src="_/img/tumblr.png" alt="tumblr"></a></li>
+		</ul>
 		® RyanSassBase
 	</div>
 </footer>
@@ -41,15 +49,15 @@
 <script src="_/js/responsive-accordion.min.js"></script>
 <script src="_/js/swipe.min.js"></script>
 <script type="text/javascript">
-	var navigation = responsiveNav(".nav-collapse", {
-		customToggle: "#nav-toggle"
-	});
+var navigation = responsiveNav(".nav-collapse", {
+	customToggle: "#nav-toggle"
+});
 
-	var elem = document.getElementById('slider');
-	
-	window.mySwipe = Swipe(elem, {
-		auto: 6000,
-	});
+var elem = document.getElementById('slider');
+
+window.mySwipe = Swipe(elem, {
+	auto: 6000,
+});
 </script>
 
 
@@ -57,70 +65,89 @@
 <script src="_/js/jquery.placeholder.min.js"></script>
 <script src="_/js/jquery.form.min.js"></script>
 <script>
-	$(function(){
-		$('#contact').validate({
-			submitHandler: function(form) {
-				$(form).ajaxSubmit({
-					url: 'contact-submit.php',
-					success: function() {
-						$('#contact').hide();
-						$('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
-					}
-				});
-			}
-		});
+$(function(){
+	$('#contact').validate({
+		submitHandler: function(form) {
+			$(form).ajaxSubmit({
+				url: 'contact-submit.php',
+				success: function() {
+					$('#contact').hide();
+					$('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+				}
+			});
+		}
 	});
+});
 </script>
 
-<!-- Add fancyBox -->
-<link rel="stylesheet" href="_/plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="_/plugins/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-<!-- Optionally add helpers - button, thumbnail and/or media -->
-<link rel="stylesheet" href="_/plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="_/plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="_/plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-<link rel="stylesheet" href="_/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-<script type="text/javascript" src="_/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-<script src="_/js/masonry.min.js"></script>
+<script src="_/js/plugins.min.js"></script>
+<script src="_/js/jquery.finalTilesGallery.min.js"></script>
 <script src="_/js/imagesloaded.min.js"></script>
-
+<script src="_/js/headhesive.min.js"></script>
+<script src="_/js/bind-polyfill.min.js"></script>
+<script src="_/js/smooth-scroll.min.js"></script>
 <script src="_/js/script.min.js"></script>
 
 <script>
-	$(document).ready( function() {
-			    // Don't execute if we're in the Live Editor
-			    if( !window.isCMS ) {
-			        // Group images by gallery using `data-fancybox-group` attributes
-			        var galleryId = 1;
-			        $('.editable-gallery').each( function() {
-			        	$(this).find('a').attr('data-fancybox-group', 'gallery-' + galleryId++);
-			        });
-			        // Initialize Fancybox
-			        $('.editable-gallery a').fancybox({
-			            // Use the `alt` attribute for captions per http://fancyapps.com/fancybox/#useful
-			            beforeShow: function() {
-			            	var alt = this.element.find('img').attr('alt');
-			            	this.inner.find('img').attr('alt', alt);
-			            	this.title = alt;
-			            }
-			        });
-			    }
-			});
-</script>
-<script>
+$(document).ready( function() {
 
-	$("#gallery").imagesLoaded(function() {
-		var container = document.querySelector('#gallery');
-		
-		var msnry = new Masonry( container, {
-			columnWidth: 73,
-			itemSelector: '.fancybox'
-		});
+	smoothScroll.init();
+
+	var options = {
+		offset: '#showHere',
+		classes: {
+			clone:   'banner--clone',
+			stick:   'banner--stick',
+			unstick: 'banner--unstick'
+		}
+	};
+	var banner = new Headhesive('.banner', options);
+
+
+	$('#gallery-items li').each(function(){
+		var theTag = $(this).find('img').attr('alt').replace(" ", "-");
+
+		if ( theTag != '') {
+			$(this).addClass( 'ftg-' + theTag );
+		}
+
+		var theLink = $(this).find('a').attr('href');
+
+		if ( theLink != '') {
+			$(this).find('img').attr('src', theLink);
+		}
 	});
-	
+
+       	// Don't execute if we're in the Live Editor
+       	if( !window.isCMS ) {
+
+       		$('#gallery-items li').addClass('tile');
+       		$('#gallery-items li a').addClass('tile-inner');
+       		$('#gallery-items li a img').addClass('item');
+
+       		if ($(window).width() > 960) {
+       			$('#gallery').finalTilesGallery({
+       				gridCellSize: 5,
+       				minTileWidth: 100,
+       				imageSizeFactor: .8,
+       				hoverEffect: 'slide-left',
+       				scrollEffect: 'slide'
+       			});
+       		} else {
+       			$('#gallery').finalTilesGallery({
+       				gridCellSize: 5,
+       				minTileWidth: 100,
+       				imageSizeFactor: .2,
+       				hoverEffect: 'slide-left',
+       				scrollEffect: 'slide'
+       			});
+       		}
+       		$(".tile a").magnificPopup({
+       			type: 'image'
+       		});
+       	}
+
+       });
 </script>
 
 
